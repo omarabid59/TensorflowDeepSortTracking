@@ -37,7 +37,7 @@ If everything goes well, the system should be tracking in real time. Simply pres
 
 **Update: September 7, 2019**
 - As requested by some individuals, I've added an option to use video input instead of the webcam. Do so by typing `python object_tracking.py --input VIDEO_FILE.mp4`. By default, the video is set to constantly loop through. See the `threads/ImageInput/VideoThread.py` file for implementation.
-- Removed the Tensorflow Research [See here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) dependencies. Instead, the file required from this repository is copied and can be found at `utilities/visualization.py`. I do not take credit for this file!
+- Removed the Tensorflow Research [See here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) dependencies. Instead, the file required from this repository is copied and can be found at `utilities/external/visualization.py`. I do not take credit for this file!
 
 ## Issues
 No issues found thus far, but please report any.

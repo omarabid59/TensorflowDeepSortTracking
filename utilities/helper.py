@@ -1,5 +1,5 @@
 import numpy as np
-import utilities.visualization as vis_util
+import utilities.external.visualization as vis_util
 import cv2
 
 
