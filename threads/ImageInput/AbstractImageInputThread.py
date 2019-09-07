@@ -1,12 +1,16 @@
 import threading
-from abc import ABC,  abstractmethod
+from abc import ABC, abstractmethod
+
+
 class ImageData:
-        def __init__(self):
-            self.image_np = ()
+    def __init__(self):
+        self.image_np = ()
+
+
 class AbstractImageInputThread(threading.Thread, ABC):
-    
+
     @abstractmethod
-    def __init__(self, name, IMAGE_WIDTH = 640 ,IMAGE_HEIGHT = 480):
+    def __init__(self, name, IMAGE_WIDTH=640, IMAGE_HEIGHT=480):
         threading.Thread.__init__(self)
         ABC.__init__(self)
         self.name = name
@@ -15,8 +19,6 @@ class AbstractImageInputThread(threading.Thread, ABC):
         self.IMAGE_WIDTH = IMAGE_WIDTH
         self.IMAGE_HEIGHT = IMAGE_HEIGHT
         self.cap = []
-        
-        
 
     def run(self):
         print("Starting " + self.name)
@@ -32,4 +34,3 @@ class AbstractImageInputThread(threading.Thread, ABC):
 
     def stop(self):
         self.done = True
-   
