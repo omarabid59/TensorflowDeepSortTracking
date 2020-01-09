@@ -1,5 +1,7 @@
 # Deep SORT with Tensorflow
 
+**NOTE. This repository is no longer actively being maintained by me. However, if others would like to make changes, please put up a Pull request and I'll do my best to merge the changes ASAP. Happy coding! :)**
+
 ## Introduction
 
 This repository is an implementation to perform realtime tracking with Tensorflow using a [SSD model trained on the COCO dataset](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). It is based on the *Simple Online and Realtime Tracking with a Deep Association Metric* [Deep SORT](https://github.com/nwojke/deep_sort) algorithm. See the original repository for more information.
